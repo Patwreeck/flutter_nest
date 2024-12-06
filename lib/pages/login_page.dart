@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_nest_ojt/pages/home_page.dart';
 import 'register_page.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
@@ -24,6 +25,8 @@ class LoginPage extends StatelessWidget {
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(content: Text('Pasok ka boy!'))
       );
+      Navigator.push(context, MaterialPageRoute(builder: (context) => HomePage()));
+
     }
     catch (toinkError) {
       ScaffoldMessenger.of(context).showSnackBar(
