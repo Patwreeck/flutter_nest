@@ -100,19 +100,23 @@ class LoginPage extends StatelessWidget {
             obscureText: true,
             ),
             const SizedBox(height: 20),
-            ElevatedButton(onPressed:() => loginUser(context),
-            child:  Text('Login'),
-            style: ElevatedButton.styleFrom(
-              backgroundColor: const Color(0xFF2F2F2F),
-              foregroundColor: Colors.white,
-              shape:RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(20),
+            SizedBox(
+              width: 136,
+              height: 54,
+              child: ElevatedButton(onPressed:() => loginUser(context),
+              child:  Text('Login'),
+              style: ElevatedButton.styleFrom(
+                backgroundColor: const Color(0xFF2F2F2F),
+                foregroundColor: Colors.white,
+                shape:RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(20),
+                ),
+                padding: EdgeInsets.symmetric(
+                  horizontal: 45,
+                  vertical: 15,
+                ),
               ),
-              padding: EdgeInsets.symmetric(
-                horizontal: 45,
-                vertical: 15,
               ),
-            ),
             ),
             TextButton(onPressed:(){
               Navigator.push(context, MaterialPageRoute(builder:(context) => RegisterPage()));
@@ -120,13 +124,13 @@ class LoginPage extends StatelessWidget {
             child: Row(
               mainAxisSize: MainAxisSize.min,
               children: [
-                Expanded(child: Container(
+                Container(
                   height: 1,
+                  width : 50,
                   color: Color(0xFF888888),
                   margin: EdgeInsets.symmetric(
                     horizontal: 8,
                   ),
-                ),
                 ),
                 Text('or Register',
                 style: TextStyle(
@@ -134,13 +138,13 @@ class LoginPage extends StatelessWidget {
                   color: Color(0xFF888888),
                 ),
                 ),
-                Expanded(child: Container(
+                Container(
                   height: 1,
+                  width: 50,
                   color: Color(0xFF888888),
                   margin: EdgeInsets.symmetric(
                     horizontal: 8,
                   ),
-                ),
                 ),
               ],
             ),
