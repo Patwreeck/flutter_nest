@@ -41,46 +41,46 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyDVcbXDIW8_nfHjypvHAVcLGclXMwzAZb0',
-    appId: '1:317906777587:web:21304056cb2d4a99dd4e86',
-    messagingSenderId: '317906777587',
-    projectId: 'ojt-milan2024',
-    authDomain: 'ojt-milan2024.firebaseapp.com',
-    storageBucket: 'ojt-milan2024.firebasestorage.app',
+    apiKey: '',
+    appId: '',
+    messagingSenderId: '',
+    projectId: '',
+    authDomain: '',
+    storageBucket: '',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyCM2zr8DEGrA6pbd8eGQp84mqYR0YcAafw',
-    appId: '1:317906777587:android:fa20daf3ec19572add4e86',
-    messagingSenderId: '317906777587',
-    projectId: 'ojt-milan2024',
-    storageBucket: 'ojt-milan2024.firebasestorage.app',
+    apiKey: '',
+    appId: '',
+    messagingSenderId: '',
+    projectId: '',
+    storageBucket: '',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyCL7EU2Fi3A3fPbjY7bPz0_2CvDL1m6zW0',
-    appId: '1:317906777587:ios:062efedadedfb14cdd4e86',
-    messagingSenderId: '317906777587',
-    projectId: 'ojt-milan2024',
-    storageBucket: 'ojt-milan2024.firebasestorage.app',
-    iosBundleId: 'com.example.flutterNestOjt',
+    apiKey: '',
+    appId: '',
+    messagingSenderId: '',
+    projectId: '',
+    storageBucket: '',
+    iosBundleId: '',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyCL7EU2Fi3A3fPbjY7bPz0_2CvDL1m6zW0',
-    appId: '1:317906777587:ios:062efedadedfb14cdd4e86',
-    messagingSenderId: '317906777587',
-    projectId: 'ojt-milan2024',
-    storageBucket: 'ojt-milan2024.firebasestorage.app',
-    iosBundleId: 'com.example.flutterNestOjt',
+    apiKey: '',
+    appId: '',
+    messagingSenderId: '',
+    projectId: '',
+    storageBucket: '',
+    iosBundleId: '',
   );
 
   static const FirebaseOptions windows = FirebaseOptions(
-    apiKey: 'AIzaSyDVcbXDIW8_nfHjypvHAVcLGclXMwzAZb0',
-    appId: '1:317906777587:web:375ed39d75f4c5cadd4e86',
-    messagingSenderId: '317906777587',
-    projectId: 'ojt-milan2024',
-    authDomain: 'ojt-milan2024.firebaseapp.com',
-    storageBucket: 'ojt-milan2024.firebasestorage.app',
+    apiKey: '',
+    appId: '',
+    messagingSenderId: '',
+    projectId: '',
+    authDomain: '',
+    storageBucket: '',
   );
 }
