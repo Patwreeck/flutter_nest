@@ -9,13 +9,13 @@ class LoginPage extends StatelessWidget {
 
 
   LoginPage({super.key});
-  
+
   void loginUser(BuildContext context) async{
     try {
       if (emailController.text == '' || passwordController.text == ''){
         ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text('May kulang ka!'))
-      );
+          SnackBar(content: Text('May kulang ka!'))
+        );
        return;
       }
       UserCredential userCredential = await FirebaseAuth.instance.signInWithEmailAndPassword(
@@ -25,8 +25,7 @@ class LoginPage extends StatelessWidget {
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(content: Text('Pasok ka boy!'))
       );
-      Navigator.push(context, MaterialPageRoute(builder: (context) => HomePage()));
-
+      Navigator.push(context, MaterialPageRoute(builder: (context) => HomePage()));      
     }
     catch (toinkError) {
       ScaffoldMessenger.of(context).showSnackBar(
